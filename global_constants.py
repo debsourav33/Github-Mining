@@ -1,0 +1,11 @@
+from pathlib import Path
+
+
+access_token = None
+if access_token:
+    AUTHORIZATION_HEADER = {"Authorization": f"Bearer {access_token}",
+                            "Accept": "application/vnd.github.v3+json",
+                            "X-Github-Api-Version": "2022-11-28"}
+else:
+    AUTHORIZATION_HEADER = {"Accept": "application/vnd.github.v3+json",
+                            "X-Github-Api-Version": "2022-11-28"}
