@@ -1,5 +1,7 @@
 from pathlib import Path
 
+HOME_DIR = Path(__file__).parent
+REPO_PATH = HOME_DIR / "repos"
 
 access_token = None
 if access_token:
